@@ -50,7 +50,14 @@
 无监督学习：没有任何的标签，或者有相同的标签。已知数据集，不知如何处理，也未告知每个数据点是什么。
 
 <div align=center>
-<img src="ttps://user-images.githubusercontent.com/111955215/195987501-e98862ee-d5bc-48ef-8cb3-703c837a94dd.png" width="900">
+<img src="https://user-images.githubusercontent.com/111955215/195987501-e98862ee-d5bc-48ef-8cb3-703c837a94dd.png" width="900">
 </div>
 
 右侧的例子，无监督学习将数据划分为两个集合，也就是聚类clustering algorithm
+
+## 降低损失
+“模型”接受一个或多个特征作为输入，并返回一个预测结果 $\left(y^{\prime}\right)$ 作为输出。用损失函数（如平方损失函数）测试结果，并生成新的模型参数。学习过程会持续迭代，直到算法发现损失可能最低的模型参数。通常，系统会不断迭代，直到整体损失停止变化或至少变化非常缓慢。如果发生这种情况，我们会说模型已收敛。
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/195988287-6fdb10c4-5785-4fa5-8f24-484563cded14.png" width="900">
+</div>
