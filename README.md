@@ -39,3 +39,9 @@
 Supervised Learning 监督学习：学习数据带有标签
 
 Unsupervised Learning 无监督学习：没有任何的标签，或者有相同的标签。已知数据集，不知如何处理，也未告知每个数据点是什么。
+
+<div align=center>
+<img src="ttps://user-images.githubusercontent.com/111955215/195987501-e98862ee-d5bc-48ef-8cb3-703c837a94dd.png" width="900">
+</div>
+
+右侧的例子，无监督学习将数据划分为两个集合，也就是聚类clustering algorithm
