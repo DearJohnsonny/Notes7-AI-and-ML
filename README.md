@@ -222,7 +222,11 @@ Adaline 和 逻辑回归的差异，如下所示：
 #### 具体的推导及优化
 
 令 $\boldsymbol{\beta}=(\boldsymbol{w} ; b), \hat{x}=(\boldsymbol{x} ; 1)$, 则 $\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$ 可简写为 $\boldsymbol{\beta}^{\mathrm{T}} \hat{\boldsymbol{x}}$
-再令 $p_1\left(\hat{x}_i ; \boldsymbol{\beta}\right)=p(y=1 \mid \hat{x} ; \boldsymbol{\beta})=\frac{e^{w^T x+b}}{1+e^{w^i x+b}}$
+再令 
+
+$$
+p_1\left(\hat{x}_i ; \boldsymbol{\beta}\right)=p(y=1 \mid \hat{x} ; \boldsymbol{\beta})=\frac{e^{w^T x+b}}{1+e^{w^i x+b}}
+$$
 
 $$
 p_0\left(\hat{\boldsymbol{x}}_i ; \boldsymbol{\beta}\right)=p(y=0 \mid \hat{\boldsymbol{x}} ; \boldsymbol{\beta})=1-p_1\left(\hat{\boldsymbol{x}}_i ; \boldsymbol{\beta}\right)=\frac{1}{1+e^{\boldsymbol{w}^{\top} \boldsymbol{x}+b}}
