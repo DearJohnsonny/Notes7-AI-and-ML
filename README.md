@@ -146,6 +146,47 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 <img src="https://user-images.githubusercontent.com/111955215/199656324-f19cf2a8-84e7-4694-99f5-05fb258442e8.png" width="400">
 </div>
 
+### MCP神经元和Rosenblatt 阈值感知器
+MCP 神经元为具有二进制输出的简单逻辑门。多个信号从树突传入细胞体中，如果累积输入信号超过一定阈值，则从轴突传出输出信号。
+
+感知器采用输入向量 $x$ 和权重向量 $w$ ，净输入 $z$ 为这二者的线性组合 $\left(z=w_1 x_1+\ldots+w_m x_m\right)$ :
+$$
+w=\left[\begin{array}{c}
+w_1 \\
+w_2 \\
+\vdots \\
+w_m
+\end{array}\right], x=\left[\begin{array}{c}
+x_1 \\
+x_2 \\
+\vdots \\
+x_m
+\end{array}\right]
+$$
+激活函数采用阶跃函数 $\phi(z), \theta$ 为神经元的触发阈值:
+$$
+\phi(z)= \begin{cases}1, & \text { if } z \geq \theta \\ -1, & \text { if } z<\theta\end{cases}
+$$
+通过设定 $x_0=1$ 和 $w_0=-\theta$ ，将 $\theta$ 集成到 $z$ 中，可以让式更整齐:
+$$
+\begin{gathered}
+z=w_0 x_0+w_1 x_1+w_2 x_2+\ldots+w_m x_m=w^T x \\
+\phi(z)= \begin{cases}1, & \text { if } z \geq 0 \\
+-1, & \text { if } z<0\end{cases}
+\end{gathered}
+$$
+
+$$
+\text { 下图为通过 } z=w^T x \text { 得到 } 1 \text { 或 - } 1 \text { 的激活函数 (左子图)，以及其用于区分两个线性可分的类（右子图）: }
+$$
+
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199718349-f73e0ba5-49c6-4ab7-94a7-f2bb1774b607.png" width="400">
+</div>
+
+Rosenblatt 阈值感知器就看下面这个<a href="https://www.szdev.com/blog/AI/logistic-regression-mathmatics-and-vectorization/">原始帖子</a>就好
+
 ### 对率回归 Logistic regression
 Adaline 和 逻辑回归的差异，如下所示：
 
