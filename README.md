@@ -222,6 +222,7 @@ Adaline 和 逻辑回归的差异，如下所示：
 #### 具体的推导及优化
 
 令 $\boldsymbol{\beta}=(\boldsymbol{w} ; b), \hat{x}=(\boldsymbol{x} ; 1)$, 则 $\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$ 可简写为 $\boldsymbol{\beta}^{\mathrm{T}} \hat{\boldsymbol{x}}$
+
 再令 
 
 $$
