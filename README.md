@@ -49,6 +49,8 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 如何评估性能优劣? —— 性能度量
 
 如何判断实质差别? —— 比较检验
+
+
 ## 基本的术语
 **标签**（Lable）是指我们要预测的内容，即简单线性回归中的 y 变量。
 
@@ -83,6 +85,14 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/199653715-0a6f1f80-6bed-4741-a67a-c0cd4f793cec.png" width="900">
 </div>
+
+- 数据集; 训练, 测试
+- 示例(instance), 样例(example)
+- 样本(sample)
+- 属性(attribute) = 特征(feature)。其实就是feature中的一个维度，其值为属性值。
+- 属性空间 = 样本空间 = 输入空间。可以理解为定义域
+- 特征向量(feature vector)
+- 标记空间,输出空间。可以理解为值域
 
 ## 机器学习算法
 ### Supervised Learning 监督学习
