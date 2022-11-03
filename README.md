@@ -146,6 +146,21 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 <img src="https://user-images.githubusercontent.com/111955215/199656324-f19cf2a8-84e7-4694-99f5-05fb258442e8.png" width="400">
 </div>
 
+### 对率回归 Logistic regression
+Adaline 和 逻辑回归的差异，如下所示：
+
+Adaline:
+* 激活函数：线性函数 $\phi(z)=z$
+* 阈值函数: 阶跃函数 $\hat{y}= \begin{cases}1 & \text { if } \phi(z) \geq 0 \\ 0 & \text { otherwise }\end{cases}$
+逻辑回归:
+* 激活函数: sigmoid 函数 $\phi(z)=\frac{1}{1+e^{-z}}$
+* 阈值函数：阶跃函数 $\hat{y}= \begin{cases}1 & \text { if } \phi(z) \geq 0.5 \\ 0 & \text { otherwise }\end{cases}$
+需要注意的是，逻辑回归中的条件 $\phi(z) \geq 0.5$ ，等价于 $z \geq 0$ 。
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199717381-0245b62c-1d5b-484f-9900-3bd7a9806833.png" width="400">
+</div>
+
 ## 降低损失
 “模型”接受一个或多个特征作为输入，并返回一个预测结果 $\left(y^{\prime}\right)$ 作为输出。用损失函数（如平方损失函数）测试结果，并生成新的模型参数。学习过程会持续迭代，直到算法发现损失可能最低的模型参数。通常，系统会不断迭代，直到整体损失停止变化或至少变化非常缓慢。如果发生这种情况，我们会说模型已收敛。
 
