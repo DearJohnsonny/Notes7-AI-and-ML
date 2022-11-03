@@ -100,7 +100,7 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 - 未见样本(unseen instance)
 - 未知 "分布"
 - 独立同分布(i.i.d.)：否则无法利用概率统计的工具
-- 泛化(generalization)：训练出来的模型处理新数据的能力，可以理解为推广
+- 泛化(generalization)：训练出来的模型处理新数据的能力，可以理解为推广。对新数据的处理能力越强，则泛化性越好，也就是 $P(|f(\boldsymbol{x})-y| \leq \epsilon) \geq 1-\delta$ 中的$epsilona$ 比较小
 ## 机器学习算法
 ### Supervised Learning 监督学习
 监督学习：学习数据带有标签
