@@ -219,6 +219,18 @@ Adaline 和 逻辑回归的差异，如下所示：
 <img src="https://user-images.githubusercontent.com/111955215/199717381-0245b62c-1d5b-484f-9900-3bd7a9806833.png" width="1500">
 </div>
 
+#### 具体的推导及优化
+
+令 $\boldsymbol{\beta}=(\boldsymbol{w} ; b), \hat{x}=(\boldsymbol{x} ; 1)$, 则 $\boldsymbol{w}^{\mathrm{T}} \boldsymbol{x}+b$ 可简写为 $\boldsymbol{\beta}^{\mathrm{T}} \hat{\boldsymbol{x}}$
+再令 $p_1\left(\hat{x}_i ; \boldsymbol{\beta}\right)=p(y=1 \mid \hat{x} ; \boldsymbol{\beta})=\frac{e^{w^T x+b}}{1+e^{w^i x+b}}$
+
+$$
+p_0\left(\hat{\boldsymbol{x}}_i ; \boldsymbol{\beta}\right)=p(y=0 \mid \hat{\boldsymbol{x}} ; \boldsymbol{\beta})=1-p_1\left(\hat{\boldsymbol{x}}_i ; \boldsymbol{\beta}\right)=\frac{1}{1+e^{\boldsymbol{w}^{\top} \boldsymbol{x}+b}}
+$$
+
+则似然项可重写为 $p\left(y_i \mid \boldsymbol{x}_i ; \boldsymbol{w}_i, b\right)=y_i p_1\left(\hat{\boldsymbol{x}}_i ; \boldsymbol{\beta}\right)+\left(1-y_i\right) p_0\left(\hat{\boldsymbol{x}}_i ; \boldsymbol{\beta}\right)$ 于是, 最大化似然函数 $\ell(\boldsymbol{w}, b)=\sum_{i=1}^m \ln p\left(y_i \mid x_i ; \boldsymbol{w}, b\right)$
+等价为最小化 $\ell(\boldsymbol{\beta})=\sum_{i=1}^m\left(-y_i \boldsymbol{\beta}^{\mathrm{T}} \hat{\boldsymbol{x}}_i+\ln \left(1+e^{\beta^{\mathrm{T}} \hat{x}_i}\right)\right)$
+
 ## 降低损失
 “模型”接受一个或多个特征作为输入，并返回一个预测结果 $\left(y^{\prime}\right)$ 作为输出。用损失函数（如平方损失函数）测试结果，并生成新的模型参数。学习过程会持续迭代，直到算法发现损失可能最低的模型参数。通常，系统会不断迭代，直到整体损失停止变化或至少变化非常缓慢。如果发生这种情况，我们会说模型已收敛。
 
