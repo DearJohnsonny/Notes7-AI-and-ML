@@ -35,8 +35,17 @@
 * 指定的电子邮件是垃圾邮件还是非垃圾邮件？
 * 这是狗、猫还是仓鼠的图片？
 
-泛化误差：在 “末来”样本上的误差
-经檢误差: 在训练集上的误差, 亦称 “训练误差”
+**泛化误差**：在 “末来”样本上的误差
+
+**经檢误差**: 在训练集上的误差, 亦称 “训练误差”
+
+过拟合 (Overfitting) ：模型学习能力过墙以至于将实验者不希望的特征也学习了，学到了不该学的东西。U型曲线的右侧
+
+欠拟合 (Underfitting)。U型曲线的左侧
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199653715-0a6f1f80-6bed-4741-a67a-c0cd4f793cec.png" width="900">
+</div>
 
 ## 机器学习算法
 ### Supervised Learning 监督学习
