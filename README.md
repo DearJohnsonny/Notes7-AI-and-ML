@@ -16,6 +16,8 @@
 
 # 基础知识
 ## 关于模型
+计算学习模型 computational learning theory
+PAC 概率近似正确： $P(|f(\boldsymbol{x})-y| \leq \epsilon) \geq 1-\delta$
 
 ### 评估方法
 
