@@ -93,18 +93,19 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/199656174-c3b5fcb4-534c-4679-97b3-2803f9a147d7.png" width="700">
 </div>
+
 #### 分类(Classification)
 在分类中，函数的输出是一个分类标签。常见的例子有垃圾邮件识别和手写数字识别。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199656055-a970304b-42e8-4652-99b7-f858b0595387.png" width="700">
+<img src="https://user-images.githubusercontent.com/111955215/199656055-a970304b-42e8-4652-99b7-f858b0595387.png" width="400">
 </div>
 
 #### 回归(Regression)
 在回归中，函数的输出可以是一个连续的值，通常是一个数学函数。例如，对于某一职位，员工薪水和工龄之间的关系。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199656104-0e42b15b-908f-4dba-a0ca-36da46899828.png" width="700">
+<img src="https://user-images.githubusercontent.com/111955215/199656104-0e42b15b-908f-4dba-a0ca-36da46899828.png" width="400">
 </div>
 
 ### Unsupervised Learning 无监督学习
@@ -114,14 +115,14 @@ K 折交叉验证可以得到令人满意的泛化性能的最优超参数值，
 聚类是一种探索性数据分析技术，能够在不知道输入对象的任何先验知识的情况下，将其分成不同的集群。每个集群包含一定程度相似的对象，但是与其他集群中的对象不相似。例如营销人员将客户分类成不同的客户群。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199656342-319e09b7-06bb-4622-bf2b-e19658599e18.png" width="700">
+<img src="https://user-images.githubusercontent.com/111955215/199656342-319e09b7-06bb-4622-bf2b-e19658599e18.png" width="400">
 </div>
 
 #### 降维 (Dimensionality Reduction)
 通常，我们正在处理高维度的数据，这对于有限的存储空间和机器学习算法的计算性能是很大的挑战。降维是指在某些限定条件下，降低随机变量的维度，得到一组“不相关”的主变量，同时保留大部分有效信息。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199656324-f19cf2a8-84e7-4694-99f5-05fb258442e8.png" width="700">
+<img src="https://user-images.githubusercontent.com/111955215/199656324-f19cf2a8-84e7-4694-99f5-05fb258442e8.png" width="400">
 </div>
 
 ## 降低损失
