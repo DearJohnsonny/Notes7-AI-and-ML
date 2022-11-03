@@ -210,7 +210,7 @@ Adaline 在使用线性激活函数更新权重之外，采用单位阶跃的量
 Adaline 和 逻辑回归的差异，如下所示：
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199723005-96016b09-7443-4c57-949f-469b245e74a0.png" width="1500">
+<img src="https://user-images.githubusercontent.com/111955215/199723005-96016b09-7443-4c57-949f-469b245e74a0.png" width="600">
 </div>
 
 需要注意的是，逻辑回归中的条件 $\phi(z) \geq 0.5$ ，等价于 $z \geq 0$ 。
