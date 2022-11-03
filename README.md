@@ -193,6 +193,19 @@ Rosenblatt 阈值感知器就看下面这个<a href="https://www.szdev.com/blog/
 
 注意，感知器只有在类线性可分且学习率足够小才能收敛。如果类之间不是线性可分的，需要设置最大训练次数或者设置可容忍的错误分类数量，否则感知器会一直更新权重：
 
+### Adaline 和梯度下降法
+Adaline 是 1960 年由 Bernard Widrow 和 Tedd Hoff 提出的，被认为是对 Rosenblatt 感知器的改进。Adaline 算法定义了最小化成本函数的核心概念，为之后一些更先进的机器学习算法（如逻辑回归和支持向量机）奠定了基础。
+
+Adaline 规则和 Rosenblatt 感知器的不同之处在于在调整权重的激活函数不同，前者采用线性函数，后者采用单位阶跃函数。
+
+Adaline 在使用线性激活函数更新权重之外，采用单位阶跃的量化器来预测类标签，如下图所示：
+
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199722344-8b56fd03-2b5a-49f3-8058-1267792d75b7.png" width="1500">
+</div>
+
+梯度下降见Notes5_Caculus那一章
+
 ### 对率回归 Logistic regression
 Adaline 和 逻辑回归的差异，如下所示：
 
@@ -205,7 +218,7 @@ Adaline:
 需要注意的是，逻辑回归中的条件 $\phi(z) \geq 0.5$ ，等价于 $z \geq 0$ 。
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/111955215/199717381-0245b62c-1d5b-484f-9900-3bd7a9806833.png" width="400">
+<img src="https://user-images.githubusercontent.com/111955215/199717381-0245b62c-1d5b-484f-9900-3bd7a9806833.png" width="1500">
 </div>
 
 ## 降低损失
