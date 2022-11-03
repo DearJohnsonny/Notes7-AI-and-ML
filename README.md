@@ -209,14 +209,11 @@ Adaline 在使用线性激活函数更新权重之外，采用单位阶跃的量
 ### 对率回归 Logistic regression
 Adaline 和 逻辑回归的差异，如下所示：
 
-Adaline:
-* 激活函数：线性函数 $\phi(z)=z$
-* 阈值函数: 阶跃函数 $\hat{y}= \begin{cases}1 & \text { if } \phi(z) \geq 0 \\ 0 & \text { otherwise }\end{cases}$
-逻辑回归:
-* 激活函数： sigmoid 函数 $\phi(z)=\frac{1}{1+e^{-z}}$
-* 阈值函数: 阶跃函数 $\hat{y}= \begin{cases}1 & \text { if } \phi(z) \geq 0.5 \\ 0 & \text { otherwise }\end{cases}$
-需要注意的是，逻辑回归中的条件 $\phi(z) \geq 0.5$ ，等价于 $z \geq 0$ 。
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199723005-96016b09-7443-4c57-949f-469b245e74a0.png" width="1500">
+</div>
 
+需要注意的是，逻辑回归中的条件 $\phi(z) \geq 0.5$ ，等价于 $z \geq 0$ 。
 
 <div align=center>
 <img src="https://user-images.githubusercontent.com/111955215/199717381-0245b62c-1d5b-484f-9900-3bd7a9806833.png" width="1500">
