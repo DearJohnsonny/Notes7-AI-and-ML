@@ -10,6 +10,10 @@
 <img src="https://user-images.githubusercontent.com/111955215/195480902-bbd1fc80-9665-437f-9f43-340a2189e35a.png" width="900">
 </div>
 
+<div align=center>
+<img src="https://user-images.githubusercontent.com/111955215/199656486-321639ab-85f0-4d98-ba62-00c111f04142.png" width="900">
+</div>
+
 # 基础知识
 ## 关于模型
 
