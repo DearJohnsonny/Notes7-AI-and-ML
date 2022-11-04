@@ -231,7 +231,7 @@ $$
 <img src="https://user-images.githubusercontent.com/111955215/199718349-f73e0ba5-49c6-4ab7-94a7-f2bb1774b607.png" width="400">
 </div>
 
-Rosenblatt 阈值感知器就看下面这个<a href="https://www.szdev.com/blog/AI/logistic-regression-mathmatics-and-vectorization/">原始帖子</a>就好
+Rosenblatt 阈值感知器就看下面这个<a href="https://www.szdev.com/blog/AI/mcp-neuron-and-perceptron/">原始帖子</a>就好
 
 注意，感知器只有在类线性可分且学习率足够小才能收敛。如果类之间不是线性可分的，需要设置最大训练次数或者设置可容忍的错误分类数量，否则感知器会一直更新权重：
 
